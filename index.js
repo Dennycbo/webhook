@@ -7,6 +7,6 @@ res.json({value:"Hello user"})
 app.post("/webhook", (req, res)=>{
     res.JSON(req.body)
 })
-app.listen(3000, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log("Running.")
 })

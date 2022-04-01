@@ -6,6 +6,7 @@ app.get("/", (req,res)=>{
 })
 app.post("/webhook", (req, res)=>{
     console.log(req.body)
+    res.json({status:"Sucess"})
 })
 app.listen(2500, ()=>{
     console.log("Running.")

@@ -4,7 +4,7 @@ app.use(express.json())
 app.get("/", (req,res)=>{
     res.json({value:"Hello world"})
 })
-app.post("/webhook", (req, res)=>{
+app.post("/", (req, res)=>{
     console.log(req.body)
     res.json({status:"Sucess"})
 })

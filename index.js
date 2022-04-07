@@ -4,7 +4,7 @@ app.use(express.urlencoded({extended:true}))
 app.get("/", (req,res)=>{
     res.json({value:"Hello world"})
 })
-app.post("/", (req, res)=>{
+app.post("/webhook", (req, res)=>{
     console.log(req.body)
     res.json({status:"Sucess"})
 })

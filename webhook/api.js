@@ -9,5 +9,4 @@ app.get("/", (req,res)=>{
 })
 app.post("/webhookbraip", (req,res)=>{
     res.json({status:"Sucess"})
-    console.log(req.body)
 })

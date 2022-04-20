@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
 app.use(express.json())
-app.listen(2500, ()=>{
+app.listen(3500, ()=>{
     console.log("Running")
 })
 app.get("/", (req,res)=>{

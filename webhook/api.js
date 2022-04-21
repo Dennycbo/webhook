@@ -9,5 +9,7 @@ app.get("/", (req,res)=>{
 })
 app.post("/webhook", (req,res)=>{
     res.json({status:"Sucess"})
-    console.log(req.body)
+    let transStatus = req.body.trans_status
+    let userEmail = req.body.client_email
+    let planKey = req.body.product_key
 })

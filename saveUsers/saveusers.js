@@ -6,7 +6,7 @@ async function SaveUsers(email_user, plan_status, plan_key, date_payment){
     if(userExist == null && plan_status == "Pagamento Aprovado"){
         await PlanStatus.create({email_user:email_user, plan_status:plan_status, plan_key:plan_key, date_payment:date_payment, plan_name:plansName[plan_key]})
     }else if(userExist != null && plan_status != "Pagamento Aprovado"){
-        await PlanStatus.findOneAndRemove({email_user:email_user})
+        await PlanStatus.findOneAndUpdate({email_user:email_user}, {plan_status:plan_status})
     }
 }
 async function ConnectDb(){

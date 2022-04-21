@@ -7,7 +7,7 @@ app.listen(3500, ()=>{
 app.get("/", (req,res)=>{
     res.json({status:"RUNNING"})
 })
-app.post("/webhookbraip", (req,res)=>{
+app.post("/webhook", (req,res)=>{
     res.json({status:"Sucess"})
     console.log(req.body)
 })

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-let PlanStatus = new mongoose.model("PlanStatus", {
+let PlanStatus = new mongoose.model("PlansWebhookBraip", {
     email_user:String,
     plan_status:String,
     plan_key:String,
